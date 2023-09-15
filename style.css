@@ -1,0 +1,15 @@
+.btn{
+    margin: 5%;
+    margin-left: 45%;
+    background-color: brown;
+}
+.head{
+    margin-top: 5%;
+    text-align: center;
+    color: brown;
+}
+.table{
+    border: 5px solid black;
+    padding: 2%;
+    color: white;
+}

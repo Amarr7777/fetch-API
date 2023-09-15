@@ -11,10 +11,16 @@ function fetchBooks() {
         .then(data => {
             console.log(data);
             console.log(data.entries);
-            let html = "";
+            let html = "'<tr><th>TITLE</th><th>Publisher(s)</th><th>PUBLISH DATE</th></tr>'";
             if (data.entries) {
                 data.entries.forEach(entry => {
-                    html += `<div>${entry.key}</div>`;
+                    html += `
+                   <tr>
+                    <td>${entry.title}</td>
+                    <td>${entry.publishers}</td>
+                    <td>${entry.publish_date
+                    }</td>
+                   </tr>`;
                 });
             } else {
                 html = "<div>No entries found.</div>";
